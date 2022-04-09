@@ -10,20 +10,72 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+    <div id="principal" class="container border p-0 mt-5">
+      <strong><h2>Payment form example</h2>
+
+      <div id='formulario' class="container2 p-4">
+        <div class="item row">
+          <div class="col">
+            <p id="cardFail"></p>
+            <label>Card #</label><br>
+            <input id="cardNum" type="text" placeholder="XXXXXXXXXXXXXXXXXXXX" minlength="20" maxlength="20"/>
+          </div>
+          <div class="col">
+            <p id="cvcFail"></p>
+            <label>CVC #</label> <br><input id="cvc" type="text" placeholder="XXXX" minlength="4" maxlength="4"/></div>
+          <div class="col">
+            <p id="amountFail"></p>
+            <label>Amount</label><br><i class="fa-solid fa-dollar-sign"></i
+            ><input id="amount" type="text" class="dollar" placeholder="Amount"/>
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-6"><p id="nameFail"></p><label>First Name</label> <br> <input type="text" id='name' size="35"/></div>
+          <div class="col-6"><p id="lastNameFail"></p><label>Last Name</label> <br> <input type="text" id='lastname' size="35"/></div>
+        </div>
+
+        <div class="row item">
+          <div class="col-6"><p id="cityFail"></p><label>City</label><br><input id="city" type="" /></div>
+          <div class="col-3"><label>State</label><br>
+            <select name="state">
+              <option value="value 1">Delaware</option>
+              <option value="value 2">New Jersey</option>
+              <option value="value 3">Maryland</option>
+              <option value="value 4">Indiana</option>
+              <option value="value 5">Illinois</option>
+              <option value="value 6">Oregon</option>
+              <option value="value 7">California</option>
+              <option value="value 8">Texas</option>
+            </select>
+          </div>
+          <div class="col-3"><p id="CPfail"></p><label>Postal Code</label><br><input id="CP" type="text" size="" /></div>
+        </div>
+
+        <div class="row item">
+          <div class="col">We accept:
+             <div class="bg-light rounded col-6"> 
+              <input class="sinw" type="radio" value="master" name="drone"><label for="master"><i class="fa-brands fa-cc-mastercard fa-lg"></i></label> 
+              <input class= "sinw" type="radio" value="visa" name="drone"><label for="visa"><i class="fa-brands fa-cc-visa fa-lg"></i></label>
+              <input class= "sinw" type="radio" value= "Paypal" name="drone"><label for="Paypal"><i class="fa-brands fa-cc-paypal fa-lg"></i></label>
+              <input class= "sinw" type="radio" value= "american" name="drone"><label for="american"><i class="fa-brands fa-cc-amex fa-lg"></i></label>
+            </div>
+              <p id="tarjFail"></p>
+          </div>
+          <div class="col"><label>Message</label><br><textarea name="area" id="textArea" cols="30" rows="3"></textarea><br> <h6 class="note">Add any notes here.</h6> 
+          </div>
+        </div>
+        </div>
+        <div class="buttons border p-2 bg-light">
+          <button id="cancel" type="button" class="btn btn-secondary">Cancel</button> 
+          <button id="send" type="button" class="btn btn-primary"> Send</button>
       </div>
     </div>
+<footer>Made with ❤️ by Laura</footer>
+    
   </body>
 </html>

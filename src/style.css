@@ -1,1 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+h2 {
+  background-color: rgba(97, 156, 224, 0.219);
+  margin: 0px;
+  display: block;
+  padding: 5px;
+  border-bottom: solid 1px rgb(211, 210, 210);
+}
+
+.item {
+  display: flex;
+  padding: 5px;
+}
+
+.buttons {
+  position: relative;
+  text-align: end;
+}
+
+.note {
+  color: grey;
+  font-size: small;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+.sinw {
+  width: auto;
+}
+
+.dollar {
+  width: 95%;
+}
+p {
+  background-color: #fdebd0;
+  border-radius: 3px;
+}
